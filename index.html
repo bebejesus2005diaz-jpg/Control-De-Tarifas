@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./CSS/login.css">
+  <title>Login</title>
+</head>
+<body>
+
+<form id="formLogin">
+
+
+  <div class="titulo">
+  <h2>Iniciar sesión</h2>
+  </div>
+
+  <input type="email" id="emailLogin" placeholder="Digita tu correo" required />
+  <input type="password" id="passLogin" placeholder="Digita tu Contraseña" required />
+  <button type="submit">Entrar</button>
+
+  <p id="msgLogin" style="color: red;"></p>
+</form>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./JS/login.js"></script>
+
+</body>
+</html>

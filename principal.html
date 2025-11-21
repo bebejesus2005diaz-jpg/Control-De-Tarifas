@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aportes Diarios</title>
+  <link rel="stylesheet" href="./CSS/stylo.css" />
+</head>
+<body>
+  <header>
+    <img src="./IMG/logistica diaz.jpeg" alt="logistica" />
+
+    <h1>Logistica Diaz</h1>
+
+    <button id="cerrar" >Cerrar Sesion</button>
+  </header>
+
+  <h1>Registro de Aportes Diarios</h1>
+
+  <div class="container">
+
+    <!-- FORMULARIO -->
+    <form id="formAporte">
+      <input type="text" id="nombre" placeholder="Nombre del cliente" required />
+      <input type="text" id="placa" placeholder="Placa del carro" required />
+      <input type="number" id="valor" placeholder="Valor del aporte" required />
+
+      <button type="submit" onclick="">Agregar Aporte</button>
+    </form>
+
+    <div class="total">
+      Total acumulado: $<span id="totalAportes">0</span>
+    </div>
+
+    <!-- TABLA -->
+    <table>
+      <thead>
+        <tr>
+          <th>Cliente</th>
+          <th>Placa</th>
+          <th>Valor</th>
+          <th>Fecha</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody id="tablaAportes"></tbody>
+    </table>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+  <script src="./JS/comportamiento.js"></script>
+</body>
+</html>
+
+
+
